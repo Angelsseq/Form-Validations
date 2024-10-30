@@ -1,0 +1,82 @@
+/* Estilo geral do formulário */
+#formCompra {
+    margin: auto;
+    max-width: 48%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Títulos */
+#formCompra h2 {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Divs de cada campo */
+#formCompra div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+#formCompra label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+#formCompra input[type="text"],
+#formCompra input[type="number"],
+#formCompra input[type="password"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+
+/* Imagem do produto */
+#formCompra img {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Mudança de cor na borda ao focar no campo */
+#formCompra input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botão de envio */
+#formCompra button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover no botão de envio */
+#formCompra button[type="submit"]:hover {
+    background-color: #218838;
+}

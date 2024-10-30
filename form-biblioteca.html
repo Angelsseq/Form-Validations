@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="form-biblioteca.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--logo redes sociais-->
     <title>Loja de Produtos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> <!-- Importação do CSS do Toastify -->
+    <script src="https://cdn.jsdelivr.net/npm/validator/validator.js"></script> <!-- Importação do Validator.js -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script> <!-- Importação do Toastify.js -->
 </head>
 <body>
 
@@ -28,8 +31,55 @@
            <button type="submit">Buscar</button>
     </div>
 </header>
-<h1>BALA</h1>
-  
+<h1>ABRAÇO</h1>
+
+<form id="formCompra">
+    <!-- Produto Selecionado -->
+    <div>
+        <h2>Produto Selecionado</h2>
+        <img src="C:\Users\angel\OneDrive\Documentos\Estudos\Formulários Científicos\ImagensLoja\abracosolo.jpg" width="300">
+    </div>
+
+    <!-- Quantidade -->
+    <div>
+        <label for="quantidade">Selecione a Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" placeholder="Digite um valor acima de 0">
+        <small id="quantidadeError" class="error-message"></small>
+    </div>
+
+    <!-- Nome Completo -->
+    <div>
+        <label for="nomeCompleto">Escreva seu Primeiro Nome:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Ex: João">
+        <small id="nomeError" class="error-message"></small>
+    </div>
+
+    <!-- Endereço de E-mail -->
+    <div>
+        <label for="email">Escreva seu E-mail Completo:</label>
+        <input type="text" id="email" name="email" placeholder="Insira apenas a parte antes do @">
+        <small id="emailError" class="error-message"></small>
+    </div>
+
+    <!-- Senha -->
+    <div>
+        <label for="senha">Escreva uma Senha com Números e Caracteres Especiais:</label>
+        <input type="password" id="senha" name="senha" placeholder="Mínimo de 6 caracteres, com pelo menos 1 número e 1 especial">
+        <small id="senhaError" class="error-message"></small>
+    </div>
+
+    <!-- Data de Nascimento -->
+    <div>
+        <label for="dataNascimento">Preencha sua Data de Nascimento:</label>
+        <input type="text" id="dataNascimento" name="dataNascimento" placeholder="DD/MM/AAAA">
+        <small id="dataError" class="error-message"></small>
+    </div>
+
+    <!-- Botão de Envio -->
+    <button type="submit">Enviar Pedido</button>
+</form>  
+
+<script src="form-biblioteca.js"></script>
 <footer>
     <div class="conteudo-footer">
         <div class="secao-footer about">

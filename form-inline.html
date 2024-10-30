@@ -33,7 +33,7 @@
     <!-- Produto Selecionado -->
     <div>
         <h2>Produto Selecionado</h2>
-        <img src="C:\Users\angel\OneDrive\Documentos\Estudos\Formulários Científicos\ImagensLoja\baladoce.jpg" alt="Imagem do produto selecionado" width="200">
+        <img src="C:\Users\angel\OneDrive\Documentos\Estudos\Formulários Científicos\ImagensLoja\baladoce.jpg" alt="Imagem do produto selecionado" width="300">
     </div>
 
     <!-- Quantidade -->
@@ -48,7 +48,7 @@
         <input type="text" id="nomeCompleto" name="nomeCompleto" required 
             pattern="[A-ZÀ-Ý][a-zà-ÿ]+" 
             placeholder="Ex: João">
-        <small>O nome deve começar com letra maiúscula</small>
+        <small class="error-message">O nome deve começar com letra maiúscula</small>
     </div>
 
     <!-- Endereço de E-mail -->
@@ -57,7 +57,7 @@
         <input type="text" id="email" name="email" required 
                pattern="^[a-zA-Z0-9._%+-]+$" 
                placeholder="Insira apenas a parte antes do @"
-               title="Não inclua o @gmail.com, apenas o prefixo do e-mail">
+               title="Não inclua o @gmail.com, apenas o prefixo do e-mail. O prefixo deve conter apenas letras, números, pontos, sublinhados, sinais de porcentagem, sinais de mais ou hífens.">
         <small>Exemplo: insira apenas "exemplo" para gerar "exemplo@gmail.com"</small>
     </div>
 

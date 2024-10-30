@@ -91,3 +91,13 @@
 #formCompra button[type="submit"]:hover {
     background-color: #218838;
 }
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Oculta por padrão */
+}
+
+input:invalid ~ .error-message {
+    display: block; /* Exibe a mensagem de erro quando o input é inválido */
+}
