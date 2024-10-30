@@ -1,0 +1,197 @@
+/* Estilo do container principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Estilo do banner de boas-vindas */
+.hero {
+    width: 100%;
+    text-align: center;
+    padding: 3% 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 0.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.hero .button {
+    padding: 12px 24px;
+    margin-top: 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .button:hover {
+    background-color: #e65500;
+}
+
+/* Estilo da seção de produtos em destaque */
+.featured-products {
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #eb9393;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    padding: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0 15px;
+}
+
+.product-card .button {
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.product-card .button:hover {
+    background-color: #e65500;
+}
+
+/* Estilo da seção de promoções */
+.promo-section {
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+}
+
+.promo-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.promo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.promo-item {
+    background-color: #eb9393;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.promo-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.promo-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.promo-item p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Estilo da seção sobre */
+.about-us {
+    width: 80%;
+    padding: 2% 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.about-us .button {
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.about-us .button:hover {
+    background-color: #e65500;
+}
