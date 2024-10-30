@@ -40,6 +40,7 @@
     <div>
         <label for="quantidade">Selecione a Quantidade:</label>
         <input type="number" id="quantidade" name="quantidade" min="1" required placeholder="Digite um valor acima de 0">
+        <small class="error-message">Selecione uma quantidade maior que 0</small>
     </div>
 
     <!-- Nome Completo -->
@@ -58,7 +59,7 @@
                pattern="^[a-zA-Z0-9._%+-]+$" 
                placeholder="Insira apenas a parte antes do @"
                title="Não inclua o @gmail.com, apenas o prefixo do e-mail. O prefixo deve conter apenas letras, números, pontos, sublinhados, sinais de porcentagem, sinais de mais ou hífens.">
-        <small>Exemplo: insira apenas "exemplo" para gerar "exemplo@gmail.com"</small>
+        <small class="error-message">Exemplo: insira apenas "exemplo" para gerar "exemplo@gmail.com"</small>
     </div>
 
     <!-- Senha -->
@@ -67,7 +68,7 @@
         <input type="password" id="senha" name="senha" required 
             pattern="^(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" 
             placeholder="Mínimo de 6 caracteres, com pelo menos 1 número e 1 especial">
-        <small>Deve conter números e caracteres especiais</small>
+        <small class="error-message">Deve conter números e caracteres especiais</small>
     </div>
 
     <!-- Data de Nascimento -->
@@ -76,7 +77,7 @@
         <input type="text" id="dataNascimento" name="dataNascimento" required 
             pattern="\d{2}/\d{2}/\d{4}" 
             placeholder="DD/MM/AAAA">
-        <small>Formato: DD/MM/AAAA</small>
+        <small class="error-message">Responda no formato: DD/MM/AAAA</small>
     </div>
 
     <!-- Botão de Envio -->
