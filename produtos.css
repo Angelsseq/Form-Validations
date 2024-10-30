@@ -1,0 +1,94 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilo do container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Estilo do título */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 6%;
+    margin-bottom: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400%;
+}
+
+/* Estilo da grade de produtos */
+.produtos-grid {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 produtos por linha */
+    margin-top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    gap: 2%;
+}
+
+/* Estilo de cada card de produto */
+.produto-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    width: 100%;
+    height: 100%;
+    min-height:100%;
+    min-width: 100%;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo da imagem do produto */
+.produto-card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 8px;
+    margin-bottom: 1%;
+}
+
+/* Estilo do nome e preço */
+.produto-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.produto-card p {
+    font-size: 2em;
+    color: #555;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/* Estilo do botão de compra */
+.produto-card button {
+    padding: 20px 40px;
+    background-color: #ff6600;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.produto-card button:hover {
+    background-color: #e65500;
+}
