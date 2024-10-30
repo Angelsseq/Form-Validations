@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="footerheader.css">
-    <link rel="stylesheet" href="form-biblioteca.css">
+    <link rel="stylesheet" href="form-final.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--logo redes sociais-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> <!-- Importação do CSS do Toastify -->
+    <script src="https://cdn.jsdelivr.net/npm/validator/validator.js"></script> <!-- Importação do Validator.js -->
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script> <!-- Importação do Toastify.js -->
+    <script src="form-final.js"></script>
     <title>Loja de Produtos</title>
 </head>
 <body>
@@ -30,6 +34,60 @@
 </header>
 <h1>BALA</h1>
   
+<form id="formCompra" action="form-inline-confirma.html" method="post">
+    <!-- Produto Selecionado -->
+    <div>
+        <h2>Produto Selecionado</h2>
+        <img src="C:\Users\angel\OneDrive\Documentos\Estudos\Formulários Científicos\ImagensLoja\camisetapretagordo.jpg" width="300">
+    </div>
+
+    <!-- Quantidade -->
+    <div>
+        <label for="quantidade">Selecione a Quantidade:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" required placeholder="Digite um valor acima de 0">
+        <small id="quantidadeError" class="error-message">Selecione uma quantidade maior que 0</small>
+    </div>
+
+    <!-- Nome Completo -->
+    <div>
+        <label for="nomeCompleto">Escreva seu Primeiro Nome:</label>
+        <input type="text" id="nomeCompleto" name="nomeCompleto" required placeholder="Ex: João" 
+            pattern="[A-ZÀ-Ý][a-zà-ÿ]+">
+        <small id="nomeError" class="error-message">O nome deve começar com letra maiúscula</small>
+    </div>
+
+    <!-- Endereço de E-mail -->
+    <div>
+        <label for="email">Escreva seu E-mail Completo:</label>
+        <input type="text" id="email" name="email" required 
+               pattern="^[a-zA-Z0-9._%+-]+$" 
+               placeholder="Insira apenas a parte antes do @"
+               title="Não inclua o @gmail.com, apenas o prefixo do e-mail. O prefixo deve conter apenas letras, números, pontos, sublinhados, sinais de porcentagem, sinais de mais ou hífens.">
+        <small id="emailError" class="error-message">Exemplo: insira apenas "exemplo" para gerar "exemplo@gmail.com"</small>
+    </div>
+
+    <!-- Senha -->
+    <div>
+        <label for="senha">Escreva uma Senha com Números e Caracteres Especiais:</label>
+        <input type="password" id="senha" name="senha" required 
+            pattern="^(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$" 
+            placeholder="Mínimo de 6 caracteres, com pelo menos 1 número e 1 especial">
+        <small id="senhaError" class="error-message">Deve conter números e caracteres especiais</small>
+    </div>
+
+    <!-- Data de Nascimento -->
+    <div>
+        <label for="dataNascimento">Preencha sua Data de Nascimento:</label>
+        <input type="text" id="dataNascimento" name="dataNascimento" required 
+            pattern="\d{2}/\d{2}/\d{4}" 
+            placeholder="DD/MM/AAAA">
+        <small id="dataError" class="error-message">Responda no formato: DD/MM/AAAA</small>
+    </div>
+
+    <!-- Botão de Envio -->
+    <button type="submit">Enviar Pedido</button>
+</form>
+
 <footer>
     <div class="conteudo-footer">
         <div class="secao-footer about">
